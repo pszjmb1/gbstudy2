@@ -9,7 +9,18 @@
 	
 	<p>Welcome to Sayit. Today, an incident reporting system for the Nottingham University Hospital. Here, you can report any minor incidents and other issues, and they will be sent to the apporiate member of staff. Alternatively, if you are that appropriate member of staff, you can view the list of issues relevant to your area of expertise.</p>
 
-	<h3>Login or Create an Account</h3>
-	{{> login}}
+	<p>To get started, either add 'wye' for the full issue report, or 'mmz' for the abbreviated version, followed by your chosen username, like so: restofURL/wye/myUsername or restofURL/mmz/myUsername (This will be stored for data analysis purposes, but you can choose to have the author remain anonymous to others on the site itself). Alternatively, fill in the information below to be taken to the appropriate form:</p>
+
+	<form name="urlmaker" method="post">
+		<label for="username">Username</label>
+		<input type="text" name="username">
+		<select name="formtype">
+			<option value="0">Please select whether you want the full or abbreviated form</option>
+			<option value="wye">Full</option>
+			<option value="mmz">Abbreviated</option>
+		</select>
+		<input type="submit">
+	</form>
+
 	
 </template>

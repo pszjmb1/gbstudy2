@@ -6,11 +6,8 @@
 standard-app-packages
 bootstrap
 router
-accounts-ui-bootstrap-dropdown
-accounts-password
 spin
 paginated-subscription
-email
 insecure
 iron-router
-accounts-base
+houston
