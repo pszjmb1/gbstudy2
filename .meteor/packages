@@ -8,6 +8,5 @@ bootstrap
 router
 spin
 paginated-subscription
-insecure
 iron-router
 houston
