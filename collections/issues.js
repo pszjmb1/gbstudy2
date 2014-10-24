@@ -23,8 +23,6 @@ Meteor.methods({
 				throw new Meteor.Error(422, 'Please fill in the time.');
 			if (!grumbleAttribs.location)
 				throw new Meteor.Error(422, 'Please fill in the location.');
-			if (!grumbleAttribs.anonymous)
-				throw new Meteor.Error(422, 'Please fill in the anonymity requirement.');
 		}
 		//if (!grumbleAttribs.urgency)
 		//	throw new Meteor.Error(422, 'Please fill in the urgency.');
